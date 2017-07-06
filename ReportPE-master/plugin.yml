@@ -5,9 +5,9 @@ api: [1.0.0]
 main: ReportPE\Main
 commands:
   report:
-    description: Report A Problem!
-    usage: "/report < problem >"
-    aliases: [rpt, r]
+    description: Báo cáo người chơi!
+    usage: "/rpt <ten nguoi choi> <li do>"
+    aliases: [rpt, baocao]
     permission: reportpe.command.report
   reports:
     description: Check User Reports!
