@@ -40,7 +40,7 @@
       
         if(!(isset($args[0]))) {
         
-          $sender->sendMessage(TF::RED . "Error: not enough args. Usage: /report < problem >");
+          $sender->sendMessage(TF::RED . "Cách sử dụng: /rpt <tên người chơi> <lí do>");
           
           return true;
           
@@ -56,7 +56,7 @@
           
           file_put_contents("reports.txt", $player_name . " || " . $problem . "\n", FILE_APPEND);
           
-          $sender->sendMessage(TF::GREEN . "Successfully saved your report!");
+          $sender->sendMessage(TF::GREEN . "Chúng tôi sẽ ghi nhận báo cáo của bạn và xử lí nhanh nhất có thể!");
           
           return true;
           
